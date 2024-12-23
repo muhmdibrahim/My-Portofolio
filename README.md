@@ -36,7 +36,7 @@ This repository contains the source code for my personal portfolio website. The 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/muhmdibrahim/portfolio-website.git
+  (https://github.com/muhmdibrahim/My-Portofolio.git)
    ```
 
 2. Navigate to the project directory:
