@@ -411,6 +411,9 @@ section {
     .main-content h3{
         font-size: 1.4em;
     }
+    .theme-toggle {
+        margin-top: 5.5em;
+    }
 }
 
 @media (max-width:390px){
