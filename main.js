@@ -16,8 +16,22 @@ scrollToTopButton.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+// 2. theme Toggle Button
+const themeToggleButton = document.createElement('button');
+themeToggleButton.textContent = "🌙 Dark";
+themeToggleButton.classList.add('theme-toggle');
+document.body.appendChild(themeToggleButton);
 
-// 2. add blog form
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+        themeToggleButton.textContent = "☀️ Light";
+    } else {
+        themeToggleButton.textContent = "🌙 Dark";
+    }
+});
+
+/*
 const blogContainer = document.querySelector('.blog .content');
 const addBlogButton = document.getElementById('add-blog');
 
@@ -50,18 +64,4 @@ addBlogButton.addEventListener('click', () => {
         alert('Please fill out both fields.');
     }
 });
-
-// 3. theme Toggle Button
-const themeToggleButton = document.createElement('button');
-themeToggleButton.textContent = "🌙 Dark";
-themeToggleButton.classList.add('theme-toggle');
-document.body.appendChild(themeToggleButton);
-
-themeToggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    if (document.body.classList.contains('dark-theme')) {
-        themeToggleButton.textContent = "☀️ Light";
-    } else {
-        themeToggleButton.textContent = "🌙 Dark";
-    }
-});
+*/

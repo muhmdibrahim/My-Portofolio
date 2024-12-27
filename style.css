@@ -55,8 +55,7 @@ body.dark-theme .navigation a:hover{
     color: #464646;
 }
 
-body.dark-theme .projects,
-body.dark-theme .blog{
+body.dark-theme .projects{
     background-color: var(--main-light-black);
 }
 
@@ -121,7 +120,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(background.png) no-repeat;
+    background: linear-gradient(rgb(0, 0, 255), #f0f0f0);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -192,7 +191,7 @@ section {
     flex-wrap: wrap;
 }
 
-.card, .blog-card {
+.card {
     background-color: #fff;
     width: 18em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
@@ -202,21 +201,21 @@ section {
     transition: 0.7s ease;
 }
 
-.card:hover, .blog-card:hover {
+.card:hover {
     transform: scale(1.1);
 }
 
-.card .icon, .blog-card .icon {
+.card .icon {
     color: #3a6cf4;
     font-size: 8em;
     text-align: center;
 }
 
-.info, .blog-info , .email-info{
+.info, .email-info{
     text-align: center;
 }
 
-.info h3, .blog-info h3{
+.info h3{
     color: #3a6cf4;
     font-size: 1.2em;
     font-weight: 700;
@@ -331,10 +330,7 @@ section {
     font-weight: bold;
 }
 
-.blog-card .read-more:hover {
-    text-decoration: underline;
-}
-
+/*
 #blog-form {
     margin: 50px auto;
     text-align: center;
@@ -375,6 +371,7 @@ section {
 #blog-form button:hover {
     background-color: #0056b3;
 }
+*/
 /* end of blog cards */
 
 /* footer styles */
