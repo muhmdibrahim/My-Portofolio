@@ -384,8 +384,7 @@ section {
         font-size: 1.4em;
     }
     .theme-toggle {
-        top: 30px;
-        right: 10px;
+        margin: 2em 0px;
     }
     #header {
         padding: 10px 20px; 
