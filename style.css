@@ -49,14 +49,6 @@ body.dark-theme .project-title,
 body.dark-theme .email-info{
     color: #000000;
 }
-/*
-body.dark-theme .main h2,
-body.dark-theme .main h3,
-body.dark-theme .main-btn,
-body.dark-theme .social-icons a{
-    color: rgb(148, 145, 145);
-}
-*/
 body.dark-theme .logo:hover,
 body.dark-theme .navigation a:hover{
     color: #464646;
@@ -69,16 +61,16 @@ body.dark-theme .footer, body.dark-theme .projects{
 /* Light/Dark Theme Toggle Button */
 .theme-toggle {
     position: fixed;
-    top: 20px;
+    top: 8px;
     right: 20px;
     background-color: var(--main-blue);
     color: #fff;
     border: none;
     border-radius: 5px;
-    margin-top: 2em;
-    padding: 10px 15px;
+    padding: 6px 15px;
     font-size: 1.2em;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .theme-toggle:hover {
@@ -104,8 +96,6 @@ body.dark-theme .footer, body.dark-theme .projects{
     font-size: 1.4em;
     background-color: none;
     border-style: none;
-    top: 5px;
-    right: 30px;
 }
 
 .navigation a{
@@ -171,26 +161,6 @@ section {
 #main-btn:hover {
     transform: scale(1.1);
 }
-/*
-.main-btn {
-    color: #fff;
-    background-color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
-}
-
-.main-btn:hover {
-    background-color: #0a49f6;
-    transform: scale(1.1);
-}
-*/
 
 .social-icons a {
     color: #fff;
@@ -414,33 +384,36 @@ section {
         font-size: 1.4em;
     }
     .theme-toggle {
-        margin-top: 5.5em;
+        top: 50px;
+        right: 10px;
     }
     #header {
-        padding: 10px 20px; /* Reduce padding for smaller screens */
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
+        padding: 10px 20px; 
+        flex-direction: row; 
+        align-items: flex-start; 
     }
 
     .logo {
-        margin-bottom: 10px; /* Add spacing between logo and navigation */
-        font-size: 1.2em; /* Adjust font size for smaller screens */
+        font-size: 1.2em; 
     }
 
     .navigation {
         display: flex;
-        flex-direction: column; /* Stack navigation links vertically */
-        align-items: flex-start; /* Align links to the left */
+        flex-direction: row; 
+        align-items: flex-start; 
     }
 
     .navigation a {
-        padding: 5px 0; /* Reduce padding between links */
-        font-size: 1em; /* Adjust font size for readability */
+        padding: 5px 5; 
+        font-size: 1em; 
     }
 }
 
 @media (max-width:390px){
     body{
         font-size: 10px;
+    }
+    .theme-toggle {
+        margin-top: 8em;
     }
 }
