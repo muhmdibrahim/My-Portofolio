@@ -17,7 +17,41 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 
-// 2. theme Toggle Button
+// 2. add blog form
+const blogContainer = document.querySelector('.blog .content');
+const addBlogButton = document.getElementById('add-blog');
+
+addBlogButton.addEventListener('click', () => {
+    const title = document.getElementById('blog-title').value;
+    const content = document.getElementById('blog-content').value;
+
+    if (title && content) {
+        const blogCard = document.createElement('div');
+        blogCard.className = 'blog-card';
+
+        blogCard.innerHTML = `
+            <div class="icon">
+                <i class="fas fa-blog"></i>
+            </div>
+            <div class="blog-info">
+                <h3>${title}</h3>
+                <p>${content}</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        `;
+
+        blogContainer.appendChild(blogCard);
+
+        // Clear input fields
+        document.getElementById('blog-title').value = '';
+        document.getElementById('blog-content').value = '';
+    } 
+    else {
+        alert('Please fill out both fields.');
+    }
+});
+
+// 3. theme Toggle Button
 const themeToggleButton = document.createElement('button');
 themeToggleButton.textContent = "🌙 Dark";
 themeToggleButton.classList.add('theme-toggle');
